@@ -11,7 +11,7 @@ Installing the Matomom-PHP plugin can be done in one of two ways. The GPM (Grav 
 
 The simplest way to install this plugin is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm) through your system's terminal (also called the command line).  From the root of your Grav install type:
 
-    bin/gpm install iplocate
+    bin/gpm install matomo-php
 
 This will install the Matomo-PHP plugin into your `/user/plugins` directory within Grav. Its files can be found under `/your/site/grav/user/plugins/matomo-php`.
 
@@ -37,7 +37,7 @@ First off, install Matomo on your server. For more information on how to get Mat
 
 You need to provide few configurations in order for the SDK to communicate with your Matomo files. In your Grav Administration panel, go to Plugins > Matomo-PHP to view the plugin configuration page.
 
-Enter the *url* where Matomo is installed. Eg. http://www.<yourdomain>.com/piwik .
+Enter the *url* where Matomo is installed. Eg. "http:// www. yourdomain .com/piwik" .
 Enter the *page_id* of the site you wish to track. If this is a single website configuration, it will probably be '1'.
 Enter the *token_auth* of a Matomo user that has administrative rights. This API token can be found by going to Settings -> Personal Settings.
 Enter the *page_view*, the <Title> of your site.
