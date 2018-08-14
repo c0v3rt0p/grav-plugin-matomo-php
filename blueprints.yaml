@@ -1,0 +1,72 @@
+name: Matomo PHP
+version: 1.0.0
+description: Matomo/Piwik PHP tracker client
+icon: globe
+author:
+  name: Nathan Shreve
+  email: nathanbshreve@outlook.com
+homepage:
+keywords: grav, plugin, matomo, piwik, php, geoip, geolocation, location
+bugs:
+readme:
+demo:
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+      CommonSettings:
+        type: section
+        title: Matomo PHP SDK settings
+        underline: TRUE
+
+      matomo_common_settings.url:
+        type: text
+        size: medium
+        label: PiwikTracker URL
+        help: URL to Matomo folder. eg. https://www.example.com/Piwik
+        placeholder: "eg. http://www.{yourdomain}.com/piwik"
+        default: ''
+        validate:
+          type: string
+
+      matomo_common_settings.page_id:
+        type: text
+        size: small
+        label: Website ID
+        help: The page ID. If only website being tracked, it will probably be '1'
+        placeholder: "page ID"
+        default: '1'
+        validate:
+          type: number
+
+      matomo_common_settings.token_auth:
+        type: text
+        size: x-large
+        label: Authorization Token
+        help: Admin level authorization token. (Administration->Personal Settings)
+        placeholder: "32 digit TokenAuth"
+        default: ''
+        validate:
+          type: number
+
+      matomo_common_settings.page_view:
+        type: text
+        size: medium
+        label: Page Title
+        help: The <Page Title> to track.
+        placeholder: "'<Page Title>' eg. My Site-Home"
+        default: ''
+        validate:
+          type: string
