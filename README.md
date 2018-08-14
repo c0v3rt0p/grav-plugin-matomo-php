@@ -42,7 +42,6 @@ Enter the *page_id* of the site you wish to track. If this is a single website c
 Enter the *token_auth* of a Matomo user that has administrative rights. This API token can be found by going to Settings -> Personal Settings.
 Enter the *page_view*, the <Title> of your site.
 
-For more information how to get application set up, see the [Facebook Developers documentation](https://developers.facebook.com/).
 
 ## Config Defaults
 
